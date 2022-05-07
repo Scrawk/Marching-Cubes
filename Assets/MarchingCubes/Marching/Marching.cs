@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace MarchingCubesProject
 {
-    public abstract class Marching : IMarching
+    public abstract class Marching
     {
 
         public float Surface { get; set; }
