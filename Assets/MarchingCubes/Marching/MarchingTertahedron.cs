@@ -17,7 +17,7 @@ namespace MarchingCubesProject
 
         private float[] TetrahedronValue { get; set; }
 
-        public MarchingTertrahedron(float surface = 0.5f)
+        public MarchingTertrahedron(float surface = 0.0f)
             : base(surface)
         {
             EdgeVertex = new Vector3[6];

@@ -11,7 +11,7 @@ namespace MarchingCubesProject
 
         private Vector3[] EdgeVertex { get; set; }
 
-        public MarchingCubes(float surface = 0.5f) : base(surface)
+        public MarchingCubes(float surface = 0.0f) : base(surface)
         {
             EdgeVertex = new Vector3[12];
         }
@@ -64,12 +64,12 @@ namespace MarchingCubesProject
             }
         }
 
-        /// <summary>
-        /// EdgeConnection lists the index of the endpoint vertices for each 
-        /// of the 12 edges of the cube.
-        /// edgeConnection[12][2]
-        /// </summary>
-        private static readonly int[,] EdgeConnection = new int[,] 
+		/// <summary>
+		/// EdgeConnection lists the index of the endpoint vertices for each 
+		/// of the 12 edges of the cube.
+		/// edgeConnection[12][2]
+		/// </summary>
+		private static readonly int[,] EdgeConnection = new int[,] 
 	    {
 	        {0,1}, {1,2}, {2,3}, {3,0},
 	        {4,5}, {5,6}, {6,7}, {7,4},
