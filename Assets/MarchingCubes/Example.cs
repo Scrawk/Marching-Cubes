@@ -10,7 +10,7 @@ using Common.Unity.Drawing;
 namespace MarchingCubesProject
 {
 
-    public enum MARCHING_MODE {  CUBES, TETRAHEDRON };
+    public enum MARCHING_MODE {  CUBES, COMPACTCUBES, TETRAHEDRON };
 
     public class Example : MonoBehaviour
     {
@@ -40,6 +40,8 @@ namespace MarchingCubesProject
             Marching marching = null;
             if(mode == MARCHING_MODE.TETRAHEDRON)
                 marching = new MarchingTertrahedron();
+            else if (mode == MARCHING_MODE.COMPACTCUBES)
+                marching = new CompactMarchingCubes();
             else
                 marching = new MarchingCubes();
 
