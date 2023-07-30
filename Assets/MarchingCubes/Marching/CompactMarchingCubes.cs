@@ -9,7 +9,7 @@ namespace MarchingCubesProject
     // "Mesh Displacement: An Improved Contouring Method for Trivariate Data"
     // http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.49.5214
     // reduces tris by half, and makes for more regular proportioned tris
-    // from: http://chrishecker.com/My_liner_notes_for_spore
+    // from: https://www.chrishecker.com/My_Liner_Notes_for_Spore
     public class CompactMarchingCubes : Marching
     {
         struct VertexData
